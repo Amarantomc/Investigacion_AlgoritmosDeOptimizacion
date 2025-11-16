@@ -1,0 +1,51 @@
+[
+    {
+        "method": "newton",
+        "tol": 1e-8,
+        "max_iter": 100,
+        "x0": [0.5, 0.5],
+        "description": "Punto cercano al óptimo"
+    },
+    {
+        "method": "newton",
+        "tol": 1e-8,
+        "max_iter": 100,
+        "x0": [1.5, 1.5],
+        "description": "Punto medio"
+    },
+    {
+        "method": "newton",
+        "tol": 1e-8,
+        "max_iter": 100,
+        "x0": [3.0, 3.0],
+        "description": "Punto lejano"
+    },
+    {
+        "method": "newton",
+        "tol": 1e-8,
+        "max_iter": 100,
+        "x0": [0.2, 2.5],
+        "description": "Punto asimétrico"
+    },
+    {
+        "method": "newton",
+        "tol": 1e-8,
+        "max_iter": 100,
+        "x0": [-2.0, -2.0],
+        "description": "Punto negativo"
+    },
+    {
+        "method": "newton",
+        "tol": 1e-6,
+        "max_iter": 100,
+        "x0": [0.5, 0.5],
+        "description": "Tolerancia relajada"
+    },
+    {
+        "method": "newton",
+        "tol": 1e-10,
+        "max_iter": 100,
+        "x0": [1.0, 1.0],
+        "description": "Tolerancia estricta"
+    }
+]

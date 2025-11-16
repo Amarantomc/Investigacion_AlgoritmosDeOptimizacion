@@ -1,0 +1,93 @@
+[
+    {
+        "method": "trust_region",
+        "tol": 1e-8,
+        "max_iter": 100,
+        "x0": [0.5, 0.5],
+        "delta0": 1.0,
+        "delta_max": 10.0,
+        "eta1": 0.1,
+        "eta2": 0.75,
+        "gamma1": 0.25,
+        "gamma2": 2.0,
+        "description": "Punto cercano al óptimo"
+    },
+    {
+        "method": "trust_region",
+        "tol": 1e-8,
+        "max_iter": 100,
+        "x0": [1.5, 1.5],
+        "delta0": 1.0,
+        "delta_max": 10.0,
+        "eta1": 0.1,
+        "eta2": 0.75,
+        "gamma1": 0.25,
+        "gamma2": 2.0,
+        "description": "Punto medio"
+    },
+    {
+        "method": "trust_region",
+        "tol": 1e-8,
+        "max_iter": 100,
+        "x0": [3.0, 3.0],
+        "delta0": 1.0,
+        "delta_max": 10.0,
+        "eta1": 0.1,
+        "eta2": 0.75,
+        "gamma1": 0.25,
+        "gamma2": 2.0,
+        "description": "Punto lejano"
+    },
+    {
+        "method": "trust_region",
+        "tol": 1e-8,
+        "max_iter": 100,
+        "x0": [0.2, 2.5],
+        "delta0": 1.0,
+        "delta_max": 10.0,
+        "eta1": 0.1,
+        "eta2": 0.75,
+        "gamma1": 0.25,
+        "gamma2": 2.0,
+        "description": "Punto asimétrico"
+    },
+    {
+        "method": "trust_region",
+        "tol": 1e-8,
+        "max_iter": 100,
+        "x0": [-2.0, -2.0],
+        "delta0": 1.0,
+        "delta_max": 10.0,
+        "eta1": 0.1,
+        "eta2": 0.75,
+        "gamma1": 0.25,
+        "gamma2": 2.0,
+        "description": "Punto negativo"
+    },
+    {
+        "method": "trust_region",
+        "tol": 1e-8,
+        "max_iter": 100,
+        "x0": [0.5, 0.5],
+        "delta0": 0.5,
+        "delta_max": 10.0,
+        "eta1": 0.1,
+        "eta2": 0.75,
+        "gamma1": 0.25,
+        "gamma2": 2.0,
+        "description": "Radio inicial pequeño"
+    },
+    {
+        "method": "trust_region",
+        "tol": 1e-8,
+        "max_iter": 100,
+        "x0": [2.0, 2.0],
+        "delta0": 2.0,
+        "delta_max": 10.0,
+        "eta1": 0.1,
+        "eta2": 0.75,
+        "gamma1": 0.25,
+        "gamma2": 2.0,
+        "description": "Radio inicial grande"
+    }
+]
