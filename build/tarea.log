@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.14)  25 NOV 2025 00:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.14)  2 DEC 2025 12:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -272,77 +272,78 @@ Overfull \hbox (9.25714pt too wide) in paragraph at lines 21--22
 []$\OT1/cmtt/m/n/12 https : / / github . com / Amarantomc / Investigacion _ AlgoritmosDeOptimizacion . git$ 
  []
 
+<geogebra-export.png, id=1, 1430.34375pt x 799.98875pt>
+File: geogebra-export.png Graphic file (type png)
+<use geogebra-export.png>
+Package pdftex.def Info: geogebra-export.png  used on input line 31.
+(pdftex.def)             Requested size: 385.02547pt x 215.34068pt.
 [1
 
-{C:/Users/Daniel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] [4] [5] [6] [7] [8]
+{C:/Users/Daniel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./geogebra-export.png>] [2] [3] [4] [5] [6]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9]
-<iterations_comparison.png, id=45, 714.0276pt x 423.984pt>
+<iterations_comparison.png, id=37, 714.0276pt x 423.984pt>
 File: iterations_comparison.png Graphic file (type png)
 <use iterations_comparison.png>
-Package pdftex.def Info: iterations_comparison.png  used on input line 520.
+Package pdftex.def Info: iterations_comparison.png  used on input line 323.
 (pdftex.def)             Requested size: 385.02547pt x 228.63094pt.
- [10] [11 <./iterations_comparison.png>]
-<convergencia_exp_1_x0_0.5_0.5.png, id=54, 714.9912pt x 424.9476pt>
-File: convergencia_exp_1_x0_0.5_0.5.png Graphic file (type png)
-<use convergencia_exp_1_x0_0.5_0.5.png>
-Package pdftex.def Info: convergencia_exp_1_x0_0.5_0.5.png  used on input line 571.
+[7] [8 <./iterations_comparison.png>]
+<results/convergencia_exp_4_x0_0.5_0.5.png, id=46, 714.9912pt x 424.9476pt>
+File: results/convergencia_exp_4_x0_0.5_0.5.png Graphic file (type png)
+<use results/convergencia_exp_4_x0_0.5_0.5.png>
+Package pdftex.def Info: results/convergencia_exp_4_x0_0.5_0.5.png  used on input line 374.
 (pdftex.def)             Requested size: 385.02547pt x 228.83931pt.
-<convergencia_exp_2_x0_1.5_1.5.png, id=55, 714.0276pt x 424.9476pt>
-File: convergencia_exp_2_x0_1.5_1.5.png Graphic file (type png)
-<use convergencia_exp_2_x0_1.5_1.5.png>
-Package pdftex.def Info: convergencia_exp_2_x0_1.5_1.5.png  used on input line 581.
+ [9 <./results/convergencia_exp_4_x0_0.5_0.5.png>]
+<results/convergencia_exp_14_x0_1.5_1.5.png, id=51, 714.0276pt x 424.9476pt>
+File: results/convergencia_exp_14_x0_1.5_1.5.png Graphic file (type png)
+<use results/convergencia_exp_14_x0_1.5_1.5.png>
+Package pdftex.def Info: results/convergencia_exp_14_x0_1.5_1.5.png  used on input line 384.
 (pdftex.def)             Requested size: 385.02547pt x 229.15056pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[12 <./convergencia_exp_1_x0_0.5_0.5.png>]
-<convergencia_exp_3_x0_3.0_3.0.png, id=60, 714.9912pt x 424.9476pt>
-File: convergencia_exp_3_x0_3.0_3.0.png Graphic file (type png)
-<use convergencia_exp_3_x0_3.0_3.0.png>
-Package pdftex.def Info: convergencia_exp_3_x0_3.0_3.0.png  used on input line 591.
+<results/convergencia_exp_17_x0_3.0_3.0.png, id=52, 714.9912pt x 424.9476pt>
+File: results/convergencia_exp_17_x0_3.0_3.0.png Graphic file (type png)
+<use results/convergencia_exp_17_x0_3.0_3.0.png>
+Package pdftex.def Info: results/convergencia_exp_17_x0_3.0_3.0.png  used on input line 394.
 (pdftex.def)             Requested size: 385.02547pt x 228.83931pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<convergencia_exp_4_x0_0.2_2.5.png, id=61, 714.9912pt x 424.9476pt>
-File: convergencia_exp_4_x0_0.2_2.5.png Graphic file (type png)
-<use convergencia_exp_4_x0_0.2_2.5.png>
-Package pdftex.def Info: convergencia_exp_4_x0_0.2_2.5.png  used on input line 601.
+<results/convergencia_exp_16_x0_0.2_2.5.png, id=53, 714.9912pt x 424.9476pt>
+File: results/convergencia_exp_16_x0_0.2_2.5.png Graphic file (type png)
+<use results/convergencia_exp_16_x0_0.2_2.5.png>
+Package pdftex.def Info: results/convergencia_exp_16_x0_0.2_2.5.png  used on input line 404.
 (pdftex.def)             Requested size: 385.02547pt x 228.83931pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<convergencia_exp_5_x0_-2.0_-2.0.png, id=62, 714.9912pt x 424.9476pt>
-File: convergencia_exp_5_x0_-2.0_-2.0.png Graphic file (type png)
-<use convergencia_exp_5_x0_-2.0_-2.0.png>
-Package pdftex.def Info: convergencia_exp_5_x0_-2.0_-2.0.png  used on input line 611.
+[10 <./results/convergencia_exp_14_x0_1.5_1.5.png>]
+<results/convergencia_exp_25_x0_-2.0_-2.0.png, id=58, 714.9912pt x 424.9476pt>
+File: results/convergencia_exp_25_x0_-2.0_-2.0.png Graphic file (type png)
+<use results/convergencia_exp_25_x0_-2.0_-2.0.png>
+Package pdftex.def Info: results/convergencia_exp_25_x0_-2.0_-2.0.png  used on input line 414.
 (pdftex.def)             Requested size: 385.02547pt x 228.83931pt.
-[13 <./convergencia_exp_2_x0_1.5_1.5.png>]
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<convergencia_exp_6_x0_0.5_0.5.png, id=68, 714.9912pt x 424.9476pt>
-File: convergencia_exp_6_x0_0.5_0.5.png Graphic file (type png)
-<use convergencia_exp_6_x0_0.5_0.5.png>
-Package pdftex.def Info: convergencia_exp_6_x0_0.5_0.5.png  used on input line 621.
-(pdftex.def)             Requested size: 385.02547pt x 228.83931pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<convergencia_exp_7_x0_1.0_1.0.png, id=69, 714.9912pt x 424.9476pt>
-File: convergencia_exp_7_x0_1.0_1.0.png Graphic file (type png)
-<use convergencia_exp_7_x0_1.0_1.0.png>
-Package pdftex.def Info: convergencia_exp_7_x0_1.0_1.0.png  used on input line 631.
+File: results/convergencia_exp_4_x0_0.5_0.5.png Graphic file (type png)
+<use results/convergencia_exp_4_x0_0.5_0.5.png>
+Package pdftex.def Info: results/convergencia_exp_4_x0_0.5_0.5.png  used on input line 424.
 (pdftex.def)             Requested size: 385.02547pt x 228.83931pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14 <./convergencia_exp_3_x0_3.0_3.0.png>] [15 <./convergencia_exp_4_x0_0.2_2.5.png>] [16 <./convergencia_exp_5_x0_-2.0_-2.0.png> <./convergencia_exp_6_x0_0.5_0.5.png>] [17 <./convergencia_exp_7_x0_1.0_1.0.png>] (c:\Users\Daniel\Desktop\Tercer Año\OPT\TE\build\tarea.aux
+<results/convergencia_exp_24_x0_1.0_1.0.png, id=59, 714.9912pt x 424.9476pt>
+File: results/convergencia_exp_24_x0_1.0_1.0.png Graphic file (type png)
+<use results/convergencia_exp_24_x0_1.0_1.0.png>
+Package pdftex.def Info: results/convergencia_exp_24_x0_1.0_1.0.png  used on input line 434.
+(pdftex.def)             Requested size: 385.02547pt x 228.83931pt.
+[11 <./results/convergencia_exp_17_x0_3.0_3.0.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12 <./results/convergencia_exp_16_x0_0.2_2.5.png>] [13 <./results/convergencia_exp_25_x0_-2.0_-2.0.png>] [14 <./results/convergencia_exp_24_x0_1.0_1.0.png>] (c:\Users\Daniel\Desktop\Tercer Año\OPT\TE\build\tarea.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -352,17 +353,17 @@ L3 programming layer <2025-10-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4813 strings out of 467871
- 74981 string characters out of 5428439
- 507756 words of memory out of 5000000
+ 4812 strings out of 467871
+ 75248 string characters out of 5428439
+ 504756 words of memory out of 5000000
  33648 multiletter control sequences out of 15000+600000
- 637958 words of font info for 79 fonts, out of 8000000 for 9000
+ 637611 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,10n,65p,664b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Daniel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:\Users\Daniel\Desktop\Tercer Año\OPT\TE\build\tarea.pdf" (17 pages, 785286 bytes).
+ 57i,11n,65p,774b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Daniel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "c:\Users\Daniel\Desktop\Tercer Año\OPT\TE\build\tarea.pdf" (14 pages, 765048 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
+ 135 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
