@@ -135,52 +135,7 @@ INPUT .\iterations_comparison.png
 INPUT .\iterations_comparison.png
 INPUT .\iterations_comparison.png
 INPUT .\iterations_comparison.png
-INPUT .\results\convergencia_exp_4_x0_0.5_0.5.png
-INPUT .\results\convergencia_exp_4_x0_0.5_0.5.png
-INPUT .\results\convergencia_exp_4_x0_0.5_0.5.png
-INPUT .\results\convergencia_exp_4_x0_0.5_0.5.png
-INPUT .\results\convergencia_exp_4_x0_0.5_0.5.png
-INPUT .\results\convergencia_exp_4_x0_0.5_0.5.png
-INPUT .\results\convergencia_exp_4_x0_0.5_0.5.png
-INPUT .\results\convergencia_exp_14_x0_1.5_1.5.png
-INPUT .\results\convergencia_exp_14_x0_1.5_1.5.png
-INPUT .\results\convergencia_exp_14_x0_1.5_1.5.png
-INPUT .\results\convergencia_exp_14_x0_1.5_1.5.png
-INPUT .\results\convergencia_exp_14_x0_1.5_1.5.png
-INPUT .\results\convergencia_exp_14_x0_1.5_1.5.png
-INPUT .\results\convergencia_exp_14_x0_1.5_1.5.png
-INPUT .\results\convergencia_exp_17_x0_3.0_3.0.png
-INPUT .\results\convergencia_exp_17_x0_3.0_3.0.png
-INPUT .\results\convergencia_exp_17_x0_3.0_3.0.png
-INPUT .\results\convergencia_exp_17_x0_3.0_3.0.png
-INPUT .\results\convergencia_exp_17_x0_3.0_3.0.png
-INPUT .\results\convergencia_exp_17_x0_3.0_3.0.png
-INPUT .\results\convergencia_exp_17_x0_3.0_3.0.png
-INPUT .\results\convergencia_exp_16_x0_0.2_2.5.png
-INPUT .\results\convergencia_exp_16_x0_0.2_2.5.png
-INPUT .\results\convergencia_exp_16_x0_0.2_2.5.png
-INPUT .\results\convergencia_exp_16_x0_0.2_2.5.png
-INPUT .\results\convergencia_exp_16_x0_0.2_2.5.png
-INPUT .\results\convergencia_exp_16_x0_0.2_2.5.png
-INPUT .\results\convergencia_exp_16_x0_0.2_2.5.png
-INPUT .\results\convergencia_exp_25_x0_-2.0_-2.0.png
-INPUT .\results\convergencia_exp_25_x0_-2.0_-2.0.png
-INPUT .\results\convergencia_exp_25_x0_-2.0_-2.0.png
-INPUT .\results\convergencia_exp_25_x0_-2.0_-2.0.png
-INPUT .\results\convergencia_exp_25_x0_-2.0_-2.0.png
-INPUT .\results\convergencia_exp_25_x0_-2.0_-2.0.png
-INPUT .\results\convergencia_exp_25_x0_-2.0_-2.0.png
-INPUT .\results\convergencia_exp_4_x0_0.5_0.5.png
-INPUT .\results\convergencia_exp_4_x0_0.5_0.5.png
-INPUT .\results\convergencia_exp_4_x0_0.5_0.5.png
-INPUT .\results\convergencia_exp_4_x0_0.5_0.5.png
-INPUT .\results\convergencia_exp_24_x0_1.0_1.0.png
-INPUT .\results\convergencia_exp_24_x0_1.0_1.0.png
-INPUT .\results\convergencia_exp_24_x0_1.0_1.0.png
-INPUT .\results\convergencia_exp_24_x0_1.0_1.0.png
-INPUT .\results\convergencia_exp_24_x0_1.0_1.0.png
-INPUT .\results\convergencia_exp_24_x0_1.0_1.0.png
-INPUT .\results\convergencia_exp_24_x0_1.0_1.0.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT c:\Users\Daniel\Desktop\Tercer Año\OPT\TE\build\tarea.aux
 INPUT C:\Users\Daniel\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\Daniel\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
@@ -206,6 +161,8 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb

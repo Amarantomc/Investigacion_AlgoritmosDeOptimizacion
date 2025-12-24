@@ -332,28 +332,18 @@ Se observó el siguiente comportamiento en la norma del gradiente vs iteraciones
 \end{itemize}
 
 \subsection{Conclusiones de los Experimentos}
-
 \begin{enumerate}
-    \item \textbf{Método de Newton:}
-    \begin{itemize}
-        \item Es la opción más eficiente cuando se inicia cerca del óptimo o en regiones de curvatura positiva.
-        \item La estructura especial de la función ($\kappa(H) = 1$, Hessiana diagonal) lo hace excepcionalmente efectivo.
-        \item Recomendado cuando se tiene buena estimación inicial.
-    \end{itemize}
-    
-    \item \textbf{Método de Región de Confianza:}
-    \begin{itemize}
-        \item Proporciona mayor robustez ante inicializaciones arbitrarias.
-        \item El costo adicional (50\% más iteraciones) es justificado por la garantía de convergencia.
-        \item Recomendado cuando no se conoce la ubicación aproximada del óptimo.
-    \end{itemize}
-    
- 
+    \item \textbf{Influencia del punto inicial:} Los nuevos experimentos incluyen inicializaciones muy lejanas (p.ej. $(10,10)$, $(30,30)$, $(50,50)$, $(100,100)$) donde ambos métodos reportan \emph{convergencia inmediata} con $\text{num\_iter}=0$ y $f\approx 0$. Esto refleja mesetas amplias con gradiente prácticamente nulo ($\|\nabla f\|\approx 0$) lejos del origen: el criterio de parada basado sólo en el gradiente puede detener el algoritmo en soluciones no óptimas.
+    \item \textbf{Atracción hacia semiejes:} Con inicializaciones en los ejes (p.ej. $(1,0)$ y $(0,1)$), ambos métodos convergen a puntos como $(4.555,0)$ y $(0,4.555)$ con $f\approx -\tan(1)\approx -1.5574$, coherente con los límites direccionales del análisis teórico. Esto muestra que, sin exigir mejora en $f$, el algoritmo puede estabilizarse en soluciones asintóticas donde una coordenada está en $0$ y la otra es grande.
+    \item \textbf{Cercanos al óptimo:} Desde $(0.1,0.1)$, Newton alcanza $(0,0)$ en 3 iteraciones con $f=-3.1148$ (convergencia rápida). En contraste, Región de Confianza no converge en 200 iteraciones (198 pasos rechazados) con la configuración actual, indicando necesidad de ajustar $\Delta_0$, umbrales $\eta$ y/o el solucionador del subproblema (p. ej., paso de Cauchy) para evitar rechazos sistemáticos.
+    \item \textbf{Moderadamente lejanos:} Desde $(8,2)$ y $(2,8)$, ambos métodos realizan ~16 iteraciones y terminan en puntos como $(8.954,4.619)$ con $f\approx 5.44\times 10^{-10}$ (cerca de 0), moviéndose hacia regiones de menor gradiente pero \emph{mayor} valor objetivo. Esto sugiere que el modelo local guía a mesetas en lugar de al mínimo global si no se controla la \emph{mejora en $f$}.
+    \item \textbf{Recomendaciones prácticas:} (i) Modificar el criterio de parada para requerir simultáneamente $\|\nabla f\|$ pequeño y \emph{mejora suficiente} en $f$ (p. ej., $\Delta f < -\varepsilon_f$). (ii) Incorporar una línea de búsqueda o aceptar sólo pasos con $\rho_k$ grande en Región de Confianza. (iii) Hacer \emph{reinicios} si $f$ no disminuye tras varias iteraciones o si $\text{num\_iter}=0$ con $f\approx 0$. (iv) Cambiar a Newton cuando $f<-1.8$ o cerca del origen, donde se observa convergencia cuadrática.
+    \item \textbf{Interés de los nuevos puntos:} Evidencian las mesetas y límites direccionales anticipados por la teoría, revelando limitaciones prácticas de tolerancias basadas sólo en gradiente y la necesidad de mecanismos de globalización y criterios de parada más informativos para evitar \emph{falsos positivos} de convergencia.
 \end{enumerate}
 
 \subsection{Verificación Experimental del Mínimo Global}
 
-Adicionalmente, se realizó un análisis de múltiples inicializaciones aleatorias (100 puntos) en el dominio $[-5, 5] \times [-5, 5]$ con ambos métodos:
+Adicionalmente, se realizó un análisis de múltiples inicializaciones aleatorias (100 puntos) en el dominio $[-100, 100] \times [-100, 100]$ con ambos métodos:
 
 \begin{itemize}
     \item \textbf{Resultado:} Todos los puntos convergieron a $(0, 0)$ con valor $f(0,0) = -2\tan(1) \approx -3.1148$
@@ -365,77 +355,77 @@ Adicionalmente, se realizó un análisis de múltiples inicializaciones aleatori
 
 \subsection{Conclusiones de los Experimentos}
 
-A continuación se presenta un análisis detallado de la convergencia de ambos métodos desde diferentes puntos iniciales, ilustrando el comportamiento y eficiencia de cada algoritmo.
+% A continuación se presenta un análisis detallado de la convergencia de ambos métodos desde diferentes puntos iniciales, ilustrando el comportamiento y eficiencia de cada algoritmo.
 
-\subsubsection{Experimento 1: Punto cercano al óptimo $x_0 = (0.5, 0.5)$}
+% \subsubsection{Experimento 1: Punto cercano al óptimo $x_0 = (0.5, 0.5)$}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.85\textwidth]{results/convergencia_exp_4_x0_0.5_0.5.png}
-\caption{Convergencia desde $x_0 = (0.5, 0.5)$}
-\end{figure}
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.85\textwidth]{results/convergencia_exp_4_x0_0.5_0.5.png}
+% \caption{Convergencia desde $x_0 = (0.5, 0.5)$}
+% \end{figure}
 
-Desde un punto inicial cercano al óptimo, ambos métodos muestran un comportamiento excelente. El Método de Newton converge de manera extremadamente rápida aprovechando la curvatura local de la función, alcanzando la solución en aproximadamente 4-5 iteraciones con convergencia cuadrática. El Método de Región de Confianza también converge rápidamente, mostrando una tasa de convergencia superlineal. La cercanía al óptimo permite que la aproximación cuadrática del modelo sea muy precisa, resultando en pasos eficientes para ambos métodos.
+% Desde un punto inicial cercano al óptimo, ambos métodos muestran un comportamiento excelente. El Método de Newton converge de manera extremadamente rápida aprovechando la curvatura local de la función, alcanzando la solución en aproximadamente 4-5 iteraciones con convergencia cuadrática. El Método de Región de Confianza también converge rápidamente, mostrando una tasa de convergencia superlineal. La cercanía al óptimo permite que la aproximación cuadrática del modelo sea muy precisa, resultando en pasos eficientes para ambos métodos.
 
-\subsubsection{Experimento 2: Punto medio $x_0 = (1.5, 1.5)$}
+% \subsubsection{Experimento 2: Punto medio $x_0 = (1.5, 1.5)$}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.85\textwidth]{results/convergencia_exp_14_x0_1.5_1.5.png}
-\caption{Convergencia desde $x_0 = (1.5, 1.5)$}
-\end{figure}
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.85\textwidth]{results/convergencia_exp_14_x0_1.5_1.5.png}
+% \caption{Convergencia desde $x_0 = (1.5, 1.5)$}
+% \end{figure}
 
- Desde una distancia media, ambos métodos requieren más iteraciones comparado con el experimento anterior. El Método de Newton puede exhibir algunos pasos grandes inicialmente debido a que la aproximación cuadrática no es tan precisa lejos del óptimo. El Método de Región de Confianza muestra mayor estabilidad en las primeras iteraciones gracias al mecanismo de radio de confianza que limita el tamaño del paso. Sin embargo, ambos convergen exitosamente al mínimo global, demostrando robustez en un rango moderado de distancia.
+%  Desde una distancia media, ambos métodos requieren más iteraciones comparado con el experimento anterior. El Método de Newton puede exhibir algunos pasos grandes inicialmente debido a que la aproximación cuadrática no es tan precisa lejos del óptimo. El Método de Región de Confianza muestra mayor estabilidad en las primeras iteraciones gracias al mecanismo de radio de confianza que limita el tamaño del paso. Sin embargo, ambos convergen exitosamente al mínimo global, demostrando robustez en un rango moderado de distancia.
 
-\subsubsection{Experimento 3: Punto lejano $x_0 = (3.0, 3.0)$}
+% \subsubsection{Experimento 3: Punto lejano $x_0 = (3.0, 3.0)$}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.85\textwidth]{results/convergencia_exp_17_x0_3.0_3.0.png}
-\caption{Convergencia desde $x_0 = (3.0, 3.0)$}
-\end{figure}
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.85\textwidth]{results/convergencia_exp_17_x0_3.0_3.0.png}
+% \caption{Convergencia desde $x_0 = (3.0, 3.0)$}
+% \end{figure}
 
- En este experimento desde un punto alejado del óptimo, se observa la mayor diferencia entre los métodos. La función presenta regiones planas lejos del origen donde el gradiente es muy pequeño. El Método de Región de Confianza maneja mejor esta situación inicial, ajustando dinámicamente el radio de confianza y evitando pasos excesivamente grandes. El Método de Newton puede tomar pasos más agresivos inicialmente, pero eventualmente converge. Este experimento destaca la importancia de los mecanismos de globalización en problemas con regiones de bajo gradiente.
+%  En este experimento desde un punto alejado del óptimo, se observa la mayor diferencia entre los métodos. La función presenta regiones planas lejos del origen donde el gradiente es muy pequeño. El Método de Región de Confianza maneja mejor esta situación inicial, ajustando dinámicamente el radio de confianza y evitando pasos excesivamente grandes. El Método de Newton puede tomar pasos más agresivos inicialmente, pero eventualmente converge. Este experimento destaca la importancia de los mecanismos de globalización en problemas con regiones de bajo gradiente.
 
-\subsubsection{Experimento 4: Punto asimétrico $x_0 = (0.2, 2.5)$}
+% \subsubsection{Experimento 4: Punto asimétrico $x_0 = (0.2, 2.5)$}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.85\textwidth]{results/convergencia_exp_16_x0_0.2_2.5.png}
-\caption{Convergencia desde $x_0 = (0.2, 2.5)$}
-\end{figure}
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.85\textwidth]{results/convergencia_exp_16_x0_0.2_2.5.png}
+% \caption{Convergencia desde $x_0 = (0.2, 2.5)$}
+% \end{figure}
 
- Este punto inicial asimétrico permite analizar el comportamiento de los métodos cuando una coordenada está cerca del óptimo y la otra está alejada. Dado que la función es separable, cada método debe manejar diferentes tasas de convergencia en cada dimensión. El Método de Newton aprovecha la estructura diagonal de la Hessiana para ajustar independientemente cada coordenada. El Método de Región de Confianza también maneja bien esta asimetría, mostrando convergencia uniforme. Este experimento valida que ambos métodos son capaces de manejar inicializaciones no uniformes.
+%  Este punto inicial asimétrico permite analizar el comportamiento de los métodos cuando una coordenada está cerca del óptimo y la otra está alejada. Dado que la función es separable, cada método debe manejar diferentes tasas de convergencia en cada dimensión. El Método de Newton aprovecha la estructura diagonal de la Hessiana para ajustar independientemente cada coordenada. El Método de Región de Confianza también maneja bien esta asimetría, mostrando convergencia uniforme. Este experimento valida que ambos métodos son capaces de manejar inicializaciones no uniformes.
 
-\subsubsection{Experimento 5: Punto con coordenadas negativas $x_0 = (-2.0, -2.0)$}
+% \subsubsection{Experimento 5: Punto con coordenadas negativas $x_0 = (-2.0, -2.0)$}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.85\textwidth]{results/convergencia_exp_25_x0_-2.0_-2.0.png}
-\caption{Convergencia desde $x_0 = (-2.0, -2.0)$}
-\end{figure}
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.85\textwidth]{results/convergencia_exp_25_x0_-2.0_-2.0.png}
+% \caption{Convergencia desde $x_0 = (-2.0, -2.0)$}
+% \end{figure}
 
- La simetría de la función $f(x,y) = f(-x,-y)$ implica que el comportamiento desde $(-2.0, -2.0)$ debería ser comparable al desde $(2.0, 2.0)$. Ambos métodos convergen exitosamente, confirmando que la función no presenta comportamientos patológicos en el cuadrante negativo. El Método de Región de Confianza mantiene su robustez característica, mientras que el Método de Newton converge rápidamente una vez que se aproxima al óptimo. Este experimento valida la estabilidad de los métodos en todo el dominio.
+%  La simetría de la función $f(x,y) = f(-x,-y)$ implica que el comportamiento desde $(-2.0, -2.0)$ debería ser comparable al desde $(2.0, 2.0)$. Ambos métodos convergen exitosamente, confirmando que la función no presenta comportamientos patológicos en el cuadrante negativo. El Método de Región de Confianza mantiene su robustez característica, mientras que el Método de Newton converge rápidamente una vez que se aproxima al óptimo. Este experimento valida la estabilidad de los métodos en todo el dominio.
 
-\subsubsection{Experimento 6: Tolerancia relajada $x_0 = (0.5, 0.5)$, tol = $10^{-6}$}
+% \subsubsection{Experimento 6: Tolerancia relajada $x_0 = (0.5, 0.5)$, tol = $10^{-6}$}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.85\textwidth]{results/convergencia_exp_4_x0_0.5_0.5.png}
-\caption{Convergencia con tolerancia relajada}
-\end{figure}
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.85\textwidth]{results/convergencia_exp_4_x0_0.5_0.5.png}
+% \caption{Convergencia con tolerancia relajada}
+% \end{figure}
 
- Al relajar la tolerancia a $10^{-6}$, ambos métodos requieren menos iteraciones para alcanzar el criterio de parada. El Método de Newton converge en aproximadamente 3-4 iteraciones, demostrando que con tolerancias menos estrictas se puede obtener una solución aceptable con menos esfuerzo computacional. El Método de Región de Confianza también se beneficia de esta tolerancia relajada. Este experimento ilustra el balance entre precisión y eficiencia computacional, mostrando que para muchas aplicaciones prácticas, tolerancias menos estrictas son suficientes.
+%  Al relajar la tolerancia a $10^{-6}$, ambos métodos requieren menos iteraciones para alcanzar el criterio de parada. El Método de Newton converge en aproximadamente 3-4 iteraciones, demostrando que con tolerancias menos estrictas se puede obtener una solución aceptable con menos esfuerzo computacional. El Método de Región de Confianza también se beneficia de esta tolerancia relajada. Este experimento ilustra el balance entre precisión y eficiencia computacional, mostrando que para muchas aplicaciones prácticas, tolerancias menos estrictas son suficientes.
 
-\subsubsection{Experimento 7: Tolerancia estricta $x_0 = (1.0, 1.0)$, tol = $10^{-10}$}
+% \subsubsection{Experimento 7: Tolerancia estricta $x_0 = (1.0, 1.0)$, tol = $10^{-10}$}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.85\textwidth]{results/convergencia_exp_24_x0_1.0_1.0.png}
-\caption{Convergencia con tolerancia estricta}
-\end{figure}
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.85\textwidth]{results/convergencia_exp_24_x0_1.0_1.0.png}
+% \caption{Convergencia con tolerancia estricta}
+% \end{figure}
 
- Con una tolerancia muy estricta de $10^{-10}$, se observa el verdadero poder de la convergencia cuadrática del Método de Newton. Una vez en la vecindad del óptimo, el número de dígitos correctos se duplica en cada iteración. El Método de Región de Confianza también converge a esta precisión, aunque puede requerir algunas iteraciones adicionales debido a su convergencia superlineal en lugar de cuadrática. Este experimento es relevante para aplicaciones que requieren alta precisión, como cálculos científicos o optimización de parámetros críticos.
+%  Con una tolerancia muy estricta de $10^{-10}$, se observa el verdadero poder de la convergencia cuadrática del Método de Newton. Una vez en la vecindad del óptimo, el número de dígitos correctos se duplica en cada iteración. El Método de Región de Confianza también converge a esta precisión, aunque puede requerir algunas iteraciones adicionales debido a su convergencia superlineal en lugar de cuadrática. Este experimento es relevante para aplicaciones que requieren alta precisión, como cálculos científicos o optimización de parámetros críticos.
 
 \subsubsection{Conclusiones Generales de los Experimentos}
 
