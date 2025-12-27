@@ -1,6 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1766550830.16854 "c:/Users/Daniel/Desktop/Tercer Año/OPT/TE/tarea.tex" "build/tarea.pdf" "tarea" 1766550831.08402 0
-  "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993058908 1444 95ffe0f19b974d50849790c8225c7ef7 ""
+["pdflatex"] 1766856668.81148 "c:/Users/Daniel/Desktop/Tercer Año/OPT/TE/tarea.tex" "build/tarea.pdf" "tarea" 1766856669.59385 0
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -60,6 +59,7 @@
   "C:/Program Files/MiKTeX/tex/latex/base/inputenc.sty" 1761897084 5048 0270515b828149155424600fd2d58ac5 ""
   "C:/Program Files/MiKTeX/tex/latex/base/size12.clo" 1761897084 8449 8dc66c6c313c8eb2d774af83bca435dd ""
   "C:/Program Files/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1622999586 13886 d1306dcf79a944f6988e688c1785f9ce ""
+  "C:/Program Files/MiKTeX/tex/latex/float/float.sty" 1469020353 6916 16d2656a1984957e674b149555f1ea1d ""
   "C:/Program Files/MiKTeX/tex/latex/geometry/geometry.cfg" 1578053545 1104 7ac475a4e3466b0b43e138e9356bda83 ""
   "C:/Program Files/MiKTeX/tex/latex/geometry/geometry.sty" 1578053545 42759 9cf6c5257b1bc7af01a58859749dd37a ""
   "C:/Program Files/MiKTeX/tex/latex/graphics-cfg/graphics.cfg" 1465890692 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -69,15 +69,14 @@
   "C:/Program Files/MiKTeX/tex/latex/graphics/keyval.sty" 1749319034 2671 d9941f4bf4750e9b0603c9a2ec54693b ""
   "C:/Program Files/MiKTeX/tex/latex/graphics/trig.sty" 1749319034 4023 e66acf578d6b564c4670fb57ff336a7a ""
   "C:/Program Files/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1761198981 30662 bfd6e864f4ffc5018b0e2b6260c3181c ""
+  "C:/Program Files/MiKTeX/tex/latex/multirow/multirow.sty" 1731767677 6696 886c9f3087d0b973ed2c19aa79cb3023 ""
   "C:/Program Files/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Daniel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1763176701 82973 ba8131259d36bdcc0610dcca1a6ad87a ""
-  "C:/Users/Daniel/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1689717248 14064 6d858a01277622a9161a7b3a6081abb5 ""
   "C:/Users/Daniel/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1763176729 13323448 90763fb79f45e6a29a416700482d5eb2 ""
-  "build/tarea.aux" 1766550830 3617 34191aa7b887cf91906ae80e5e321258 "pdflatex"
-  "c:/Users/Daniel/Desktop/Tercer Año/OPT/TE/tarea.tex" 1766550829 30320 5b3b349446e881e28b7167d2782bb1fc ""
+  "build/tarea.aux" 1766856669 3321 e11664b0f541c9c80953dd15120717aa "pdflatex"
+  "c:/Users/Daniel/Desktop/Tercer Año/OPT/TE/tarea.tex" 1766856667 22152 70c4b077fa4b0b0e6f7e7b7a3f0d5ca1 ""
   "geogebra-export.png" 1764694467 178936 6710094a4a0ce9594c21ba5c487d4294 ""
-  "iterations_comparison.png" 1763331337 58445 819600351852c9a93f0cfb3e86036bc7 ""
-  "tarea.tex" 1766550829 30320 5b3b349446e881e28b7167d2782bb1fc ""
+  "tarea.tex" 1766856667 22152 70c4b077fa4b0b0e6f7e7b7a3f0d5ca1 ""
   (generated)
   "build/tarea.aux"
   "build/tarea.log"
